@@ -36,6 +36,7 @@ const Skills = () => {
                         <hr />
                         <p className=" font-secondary text-[#ABB2BF]"> HTML & CSS</p>
                         <p className=" font-secondary text-[#ABB2BF]"> TailwindCSS</p>
+                        <p className=" font-secondary text-[#ABB2BF]"> Expressjs & Nodejs</p>
                     </div>
                 </div>
             </div>

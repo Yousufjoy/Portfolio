@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="p-3 flex bg-white justify-between items-center  md:px-[120px]">
       <a href="#" id="brand" className="flex gap-2 items-center">
         <img className="object-cover max-w-[80px] max-h-[80px]" src={logo} />
-        <span className="flex font-bold font-display">Portfolio</span>
+        {/* <span className="flex font-bold font-display">Portfolio</span> */}
       </a>
       <div id="nav-menu " className="hidden md:flex gap-12 ">
         <a href="#" className="font-medium hover:text-primary">
