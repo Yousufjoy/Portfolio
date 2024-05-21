@@ -4,12 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#ee0181",
-        joy: "#01ee91",
+        primary: "#E97CBD",
+
       },
       fontFamily: {
-        display: ["Poppins", "sans-serif"],
-        body: ["Inter", "sans-serif"],
+        body: ["Poetsen One"],
+        secondary: ["Fira Code"],
+        podkova: ["Podkova"]
+
       },
     },
   },
