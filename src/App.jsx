@@ -6,6 +6,7 @@ import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
+import CopyRight from "./Components/CopyRight";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <div className="md:max-w-[1600px] mx-auto ">
         <Contact />
       </div>
+      <CopyRight />
     </>
   );
 }
