@@ -3,7 +3,7 @@ import logo from "../assets/logo.jpg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { FaGithub, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-
+import { motion } from "framer-motion"
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +14,12 @@ const Navbar = () => {
   console.log(isMenuOpen);
 
   return (
-    <nav className="p-3 flex bg-white justify-between items-center  md:px-[120px]">
+    <motion.nav
+      initial={{ y: -250 }}
+      animate={{ y: 0 }}
+      transition={{ delay: 0.2, duration: 0.5, type: "spring", stiffness: 20 }}
+
+      className="p-3 flex bg-white justify-between items-center  md:px-[120px]">
       <a href="#" id="brand" className="flex gap-2 items-center">
         <img className="object-cover max-w-[80px] max-h-[80px]" src={logo} />
         {/* <span className="flex font-bold font-display">Portfolio</span> */}
@@ -86,7 +91,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-    </nav>
+    </motion.nav>
   );
 };
 
