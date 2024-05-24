@@ -25,18 +25,51 @@ const Navbar = () => {
         {/* <span className="flex font-bold font-display">Portfolio</span> */}
       </a>
       <div id="nav-menu " className="hidden md:flex gap-12 ">
-        <a href="#" className="font-medium hover:text-primary">
+        <motion.a 
+        whileHover={{
+          scale: 1.1,
+          textShadow: "0px 0px 8px rgb(255,255,255)",
+          boxShadow: "0px 0px 8px rgb(255,255,255)",
+
+        }}
+  
+        href="#"  
+        className="font-medium hover:text-primary">
           Home
-        </a>
-        <a href="#" className="font-medium hover:text-primary">
+        </motion.a>
+        <motion.a
+         whileHover={{
+          scale: 1.1,
+          textShadow: "0px 0px 8px rgb(255,255,255)",
+          boxShadow: "0px 0px 8px rgb(255,255,255)",
+
+        }}
+        href="#" className="font-medium hover:text-primary">
           About
-        </a>
-        <a href="#" className="font-medium hover:text-primary">
+        </motion.a>
+        
+        <motion.a
+         whileHover={{
+          scale: 1.1,
+          textShadow: "0px 0px 8px rgb(255,255,255)",
+          boxShadow: "0px 0px 8px rgb(255,255,255)",
+
+        }}
+
+        href="#" className="font-medium hover:text-primary">
           Skill
-        </a>
-        <a href="#" className="font-medium hover:text-primary">
+        </motion.a>
+        <motion.a
+         whileHover={{
+          scale: 1.1,
+          textShadow: "0px 0px 8px rgb(255,255,255)",
+          boxShadow: "0px 0px 8px rgb(255,255,255)",
+
+        }}
+
+        href="#" className="font-medium hover:text-primary">
           Service
-        </a>
+        </motion.a>
       </div>
       <div className="flex gap-4">
         <button className="hidden md:block ">

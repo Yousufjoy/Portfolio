@@ -14,8 +14,10 @@ const Skills = () => {
                 </motion.div>
 
             </div>
-            <motion.div whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }} className="md:mx-6 md:ml-[150px] md:mt-[150px] ">
+            <motion.div 
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }} 
+                className="md:mx-6 md:ml-[150px] md:mt-[150px] ">
                 <div className="md:w-[177px] border border-primary px-2 py-2 cursor-pointer">
                     <span className="font-secondary font-semibold"> Languages</span>
                     <hr />

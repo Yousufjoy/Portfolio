@@ -1,4 +1,4 @@
-
+import { motion } from "framer-motion";
 // eslint-disable-next-line react/prop-types
 const ProjectCard = ({ cardData }) => {
 
@@ -10,7 +10,13 @@ const ProjectCard = ({ cardData }) => {
 
     return (
 
-        <div className="max-w-sm mx-auto bg-white border-2 border-pink-100 rounded-lg overflow-hidden shadow-lg md:my-[0px] my-[50px]">
+        <motion.div
+        whileHover={{
+            scale: 1.1,
+            boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.2)',
+          }}
+          transition={{ type: 'spring', stiffness: 300 }}
+            className="max-w-sm mx-auto bg-white border-2 border-pink-100 rounded-lg overflow-hidden shadow-lg md:my-[0px] my-[50px] cursor-pointer">
             <img
                 src={image}
                 alt="Car Image"
@@ -26,9 +32,9 @@ const ProjectCard = ({ cardData }) => {
                     <span className="text-pink-500">Nodejs</span>
                     <span>ExpressJs</span>
                     <span className="text-pink-500">MongoDB</span>
-                  
+
                 </div>
-                <hr/>
+                <hr />
                 <h2 className="text-xl font-bold mb-2">AutoMotive</h2>
                 <p className="text-gray-600 mb-4">A dynamic place for car services</p>
                 <div className="flex justify-center space-x-4">
@@ -40,7 +46,7 @@ const ProjectCard = ({ cardData }) => {
                     </button>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
