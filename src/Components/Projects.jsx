@@ -13,6 +13,7 @@ const Projects = () => {
             .catch(error => console.error('Error fetching data:', error)); // Optional: handle errors
     }, []);
 
+ 
 
     const Projects = "Projects";
 
@@ -20,7 +21,7 @@ const Projects = () => {
 
         <div className="md:mt-[80px] ">
             <Shared title={Projects}></Shared>
-            <div className=" md:grid md:grid-cols-3 md:mt-[60px] mt-[60px]">
+            <div className="md:grid md:grid-cols-3 md:gap-6 md:gap-y-8 md:mt-[60px] mt-[60px]">
 
                 {
                     data.map((cardData, index) => {

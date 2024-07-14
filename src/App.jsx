@@ -1,5 +1,4 @@
-
-import Navbar from './Components/Navbar';
+import Navbar from "./Components/Navbar";
 
 import Hero from "./Components/Hero";
 import Projects from "./Components/Projects";
@@ -11,24 +10,26 @@ import CopyRight from "./Components/CopyRight";
 function App() {
   return (
     <>
-      <Navbar></Navbar>
-      <div className="md:max-w-[1600px] mx-auto ">
-        <Hero />
-      </div>
-      <div className="md:max-w-[1600px] mx-auto ">
-        <Projects />
-      </div>
-      <div className="md:max-w-[1600px] mx-auto ">
-        <Skills />
-      </div>
+      <div className=" bg-[#191428]">
+        <Navbar></Navbar>
+        <div className="md:max-w-[1600px] mx-auto ">
+          <Hero />
+        </div>
+        <div className="md:max-w-[1600px] mx-auto ">
+          <Projects />
+        </div>
+        <div className="md:max-w-[1600px] mx-auto ">
+          <Skills />
+        </div>
 
-      <div className="md:max-w-[1600px] mx-auto ">
-        <About />
+        <div className="md:max-w-[1600px] mx-auto ">
+          <About />
+        </div>
+        <div className="md:max-w-[1600px] mx-auto ">
+          <Contact />
+        </div>
+        <CopyRight />
       </div>
-      <div className="md:max-w-[1600px] mx-auto ">
-        <Contact />
-      </div>
-      <CopyRight />
     </>
   );
 }

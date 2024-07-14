@@ -17,7 +17,7 @@ const Shared = ({ title }) => {
         >
             <div>
                 <span className="text-2xl text-primary">#</span>
-                <span className="text-[40px] font-body">{title}</span>
+                <span className="text-[40px] font-body text-white">{title}</span>
             </div>
             <div className="md:w-[500px] md:h-[3px] bg-primary md:mt-[32px] md:mx-[20px]"></div>
         </motion.div>

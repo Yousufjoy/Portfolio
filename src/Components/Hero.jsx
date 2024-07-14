@@ -16,7 +16,7 @@ function Hero() {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 2, duration: 2 }}
                     whileHover={{ scale: 1.1 }}
-                    className='text-5xl font-body leading-[60px] '>
+                    className='text-5xl font-body leading-[60px] text-white'>
                     Hi, I’m Yousuf! A MERN <br /> Stack Web <span className=' text-primary'>Developer</span> <br /> <span className=' text-primary'>& Designer</span>
                 </motion.h1>
                 <motion.h3
