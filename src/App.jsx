@@ -1,3 +1,4 @@
+import React, { useRef } from "react";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Projects from "./Components/Projects";
@@ -7,29 +8,36 @@ import Contact from "./Components/Contact";
 import CopyRight from "./Components/CopyRight";
 
 function App() {
-  return (
-    <>
-      <div className=" bg-[#191428] ">
-        <Navbar></Navbar>
-        <div className="md:max-w-[1600px] mx-auto ">
-          <Hero />
-        </div>
-        <div className="md:max-w-[1600px] mx-auto ">
-          <Projects />
-        </div>
-        <div className="md:max-w-[1600px] mx-auto ">
-          <Skills />
-        </div>
+  const heroRef = useRef(null);
+  const projectsRef = useRef(null);
+  const skillsRef = useRef(null);
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
 
-        <div className="md:max-w-[1600px] mx-auto ">
-          <About />
-        </div>
-        <div className="md:max-w-[1600px] mx-auto ">
-          <Contact />
-        </div>
-        <CopyRight />
+  const scrollToSection = (sectionRef) => {
+    sectionRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <div className="bg-[#191428]">
+      <Navbar scrollToSection={scrollToSection} refs={{ heroRef, projectsRef, skillsRef, aboutRef, contactRef }} />
+      <div ref={heroRef} className="md:max-w-[1600px] mx-auto">
+        <Hero />
       </div>
-    </>
+      <div ref={projectsRef} className="md:max-w-[1600px] mx-auto">
+        <Projects />
+      </div>
+      <div ref={skillsRef} className="md:max-w-[1600px] mx-auto">
+        <Skills />
+      </div>
+      <div ref={aboutRef} className="md:max-w-[1600px] mx-auto">
+        <About />
+      </div>
+      <div ref={contactRef} className="md:max-w-[1600px] mx-auto">
+        <Contact />
+      </div>
+      <CopyRight />
+    </div>
   );
 }
 

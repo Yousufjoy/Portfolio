@@ -1,21 +1,19 @@
 import logo from "../assets/logo.jpg";
-
 import { FaGithub, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-const Navbar = () => {
+const Navbar = ({ scrollToSection, refs }) => {
   return (
     <motion.nav
       initial={{ y: -250 }}
       animate={{ y: 0 }}
       transition={{ delay: 0.2, duration: 0.5, type: "spring", stiffness: 20 }}
-      className="p-3 flex bg-white justify-between items-center  md:px-[120px]"
+      className="p-3 flex bg-white justify-between items-center md:px-[120px]"
     >
       <a href="#" id="brand" className="flex gap-2 items-center">
         <img className="object-cover max-w-[80px] max-h-[80px]" src={logo} />
-        {/* <span className="flex font-bold font-display">Portfolio</span> */}
       </a>
-      <div id="nav-menu " className="hidden md:flex gap-12 ">
+      <div id="nav-menu " className="hidden md:flex gap-12">
         <motion.a
           whileHover={{
             scale: 1.1,
@@ -24,6 +22,7 @@ const Navbar = () => {
           }}
           href="#"
           className="font-medium hover:text-primary"
+          onClick={() => scrollToSection(refs.heroRef)}
         >
           Home
         </motion.a>
@@ -35,8 +34,9 @@ const Navbar = () => {
           }}
           href="#"
           className="font-medium hover:text-primary"
+          onClick={() => scrollToSection(refs.projectsRef)}
         >
-          Project
+          Projects
         </motion.a>
 
         <motion.a
@@ -47,8 +47,9 @@ const Navbar = () => {
           }}
           href="#"
           className="font-medium hover:text-primary"
+          onClick={() => scrollToSection(refs.skillsRef)}
         >
-          Skill
+          Skills
         </motion.a>
         <motion.a
           whileHover={{
@@ -58,6 +59,7 @@ const Navbar = () => {
           }}
           href="#"
           className="font-medium hover:text-primary"
+          onClick={() => scrollToSection(refs.contactRef)}
         >
           Contact
         </motion.a>
@@ -65,16 +67,16 @@ const Navbar = () => {
       <div className="flex gap-4">
         <a
           href="https://www.facebook.com/yousuf.joy.5/"
-          className="hidden md:block "
+          className="hidden md:block"
         >
           <FaFacebookF className="w-[20px] h-[20px] hover:text-primary" />
         </a>
-        <a href="https://github.com/Yousufjoy" className="hidden md:block ">
+        <a href="https://github.com/Yousufjoy" className="hidden md:block">
           <FaGithub className="w-[20px] h-[20px] hover:text-primary" />
         </a>
         <a
           href="https://www.linkedin.com/in/md-yousuf-52862524a/"
-          className="hidden md:block "
+          className="hidden md:block"
         >
           <FaLinkedinIn className="w-[20px] h-[20px] hover:text-primary" />
         </a>

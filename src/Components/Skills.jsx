@@ -23,7 +23,7 @@ const Skills = () => {
   }, []); // Empty dependency array ensures useEffect runs only once
 
   const skill = "Skills";
-  
+
   return (
     <div className="md:mt-[80px] md:flex ">
       <div>
@@ -64,7 +64,7 @@ const Skills = () => {
           </span>
           <hr />
           <p className=" font-secondary text-[#ABB2BF]"> MongoDB</p>
-          <p className=" font-secondary text-[#ABB2BF]"> PostgresQL</p>
+          <p className=" font-secondary text-[#ABB2BF]"> MySQL</p>
         </motion.div>
 
         <div className="md:my-6">
