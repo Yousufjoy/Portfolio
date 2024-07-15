@@ -1,5 +1,4 @@
 import Navbar from "./Components/Navbar";
-
 import Hero from "./Components/Hero";
 import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
@@ -10,7 +9,7 @@ import CopyRight from "./Components/CopyRight";
 function App() {
   return (
     <>
-      <div className=" bg-[#191428]">
+      <div className=" bg-[#191428] ">
         <Navbar></Navbar>
         <div className="md:max-w-[1600px] mx-auto ">
           <Hero />

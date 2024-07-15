@@ -2,7 +2,7 @@ import Shared from "./Shared";
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import lottie from "lottie-web";
-import animationData from "../loti/Animation - 1720975301974.json"; // Replace with your animation JSON file
+import animationData from "../loti/Animation - 1721024809230.json"; // Replace with your animation JSON file
 
 const Skills = () => {
   const container = useRef(null);
@@ -32,7 +32,7 @@ const Skills = () => {
           {/* <img className="md:max-w-[350px]" src={skills} alt="" /> */}
           <div
             ref={container}
-            style={{ width: "500px", height: "500px" }} // Adjust size as needed
+            style={{ width: "410px", height: "500px" }} // Adjust size as needed
           />
         </motion.div>
       </div>

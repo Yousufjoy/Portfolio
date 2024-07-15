@@ -7,7 +7,7 @@ const Projects = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch("data.json")
+        fetch("https://yousufjoy.github.io/portfolio_api/data.json")
             .then(res => res.json())
             .then(data => setData(data)) // Correctly set the fetched data
             .catch(error => console.error('Error fetching data:', error)); // Optional: handle errors
